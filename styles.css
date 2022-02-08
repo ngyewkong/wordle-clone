@@ -28,7 +28,7 @@ body {
 .header.title {
   display: flex;
   font-family: Arial;
-  font-size: 36px;
+  font-size: 2em;
   font-weight: 700;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
@@ -36,9 +36,6 @@ body {
   justify-content: center;
   align-items: center;
   grid-column: span 10;
-  position: absolute;
-  left: 0;
-  right: 0;
   pointer-events: none;
   color: #d7dadc;
 }
@@ -46,7 +43,7 @@ body {
 /* setting grid-template-columns to 20 as the small div spacing at second row can take 1 column while normal key is 2 columns */
 .keyboard {
   display: grid;
-  grid-template-columns: repeat(20, minmax(auto, 1.25rem));
+  grid-template-columns: repeat(20, minmax(auto, 1.75rem));
   grid-auto-rows: 3em;
   gap: 0.25rem;
   justify-content: center;
