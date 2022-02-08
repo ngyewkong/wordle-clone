@@ -45,7 +45,7 @@ body {
   display: grid;
   grid-template-columns: repeat(20, minmax(auto, 1.75rem));
   grid-auto-rows: 3em;
-  gap: 0.25rem;
+  gap: 0.35rem;
   justify-content: center;
 }
 
