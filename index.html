@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>Wordle</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/ios/96/000000/dictionary.png">
 </head>
 <body>
-    <div class="guess-grid">
+    <div class="alert-container" data-alert-container>
+    </div>
+    <div data-guess-grid class="guess-grid">
        <!-- 5x6 grid for wordle --> 
        <div class="tile"></div>
        <div class="tile"></div>
@@ -41,7 +45,7 @@
        <div class="tile"></div>
        <div class="tile"></div>
     </div>
-    <div class="keyboard">
+    <div data-keyboard class="keyboard">
         <!-- first row of qwerty -->
         <button class="key" data-key="Q">Q</button>
         <button class="key" data-key="W">W</button>
@@ -80,4 +84,7 @@
           </svg></button>
     </div>
 </body>
+<footer>
+    <a class="acknowledgement" href="https://icons8.com/icon/35087/dictionary">Dictionary icon by Icons8</a>
+</footer>
 </html> 
