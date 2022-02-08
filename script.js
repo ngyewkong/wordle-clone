@@ -15392,6 +15392,7 @@ function submitGuess() {
     const guess = activeTiles.reduce((word, tile) => {
         return word + tile.dataset.letter
     }, "")
+    
     console.log(guess)
     if (dictionary.includes(guess) === false) {
         showAlert("Word not in Dictionary")
@@ -15480,7 +15481,7 @@ function deleteKey() {
     // logic for delete letters
     // if there is no letter at the last tile do nth
     // == not === to handle undefined cases as well
-    if (lastTile == null) {
+    if (lastTile === null) {
         return 
     }
     // if there is a letter at the last tile

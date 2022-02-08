@@ -54,10 +54,12 @@ body {
   grid-column: span 3;
 }
 
-/* making sure the svg is of the right size but selecting the svg within the key */
+/* making sure the svg is of the right size by selecting the svg within the key */
+/* impt to set pointer-events to none to prevent svg or the path being selected as the target which prevent the delete from working normally */
 .key > svg {
   width: 1.75em;
   height: 1.75em;
+  pointer-events: none;
 }
 
 /* handle css styling when there is a mouse hover or when key is pressed */
