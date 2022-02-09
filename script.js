@@ -15503,7 +15503,7 @@ function checkWinLose(guess, tiles) {
 
     const remainingTiles = guessGrid.querySelectorAll(":not([data-letter])")
     if (remainingTiles.length === 0) {
-        showAlert(wordOfTheDay.toUpperCase(), null)
+        showAlert("Word of the Day is " + wordOfTheDay.toUpperCase(), null)
         stopInteraction()
     }
 }
